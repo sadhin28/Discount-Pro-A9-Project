@@ -1,25 +1,24 @@
+import { createContext, useEffect, useState } from "react";
 
 
+export const AuthContext=createContext();
 
+const AuthProvider = ({children}) => {
+    const [user,setuser]=useState(null)
+   
 
-import AuthContext from "../Context/AuthContext";
-
-
-
-export default function AuthProvider({ children }) {
-
-    const authInfo = {
-
-    };
-
+  
+    const authInfo={
+     
+        user,
+      
+    }
+    
     return (
        <AuthContext.Provider value={authInfo}>
             {children}
        </AuthContext.Provider>
     );
-}
-
-AuthProvider.propTypes = {
-    // eslint-disable-next-line no-undef
-    children: PropTypes.node.isRequired,
 };
+
+export default AuthProvider;
