@@ -25,42 +25,42 @@ function FAQSection() {
     ]
 
     return (
-         <section className="max-w-full  mx-auto px-4 py-10">
-      <h2 className="text-3xl font-bold mb-6 text-center">Frequently Asked Questions</h2>
-      <Accordion data-aos="zoom-in" className="space-y-4 ">
-        {faqs.map((faq, idx) => (
-          <AccordionItem
-            
-            key={idx}
-            header={
-              <div className="flex  justify-between items-center w-full text-left font-medium text-lg text-gray-800">
-                {faq.question}
-                <ChevronDown className="ml-2 shrink-0 transition-transform duration-200 accordion-chevron" />
-              </div>
-            }
-            className="  rounded-lg overflow-hidden"
-            contentProps={{
-              className: "p-4 text-gray-600 bg-gray-50",
-            }}
-            buttonProps={{
-              className:
-                "w-full px-4 py-3 text-left bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary rounded-t-lg",
-            }}
-            contentTransition
-          >
-            {faq.answer}
-          </AccordionItem>
-        ))}
-      </Accordion>
+        <section className="max-w-9xl  mx-auto px-4 py-10">
+            <h2 className="text-3xl font-bold mb-6 text-center">Frequently Asked Questions</h2>
+            <Accordion data-aos="zoom-in" className="space-y-4 ">
+                {faqs.map((faq, idx) => (
+                    <AccordionItem
 
-      <style jsx>{`
+                        key={idx}
+                        header={
+                            <div className="flex  justify-between items-center w-full text-left font-medium text-lg text-gray-800">
+                                {faq.question}
+                                <ChevronDown className="ml-2 shrink-0 transition-transform duration-200 accordion-chevron" />
+                            </div>
+                        }
+                        className="  rounded-lg overflow-hidden"
+                        contentProps={{
+                            className: "p-4 text-gray-600 bg-gray-50",
+                        }}
+                        buttonProps={{
+                            className:
+                                "w-full px-4 py-3 text-left bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary rounded-t-lg",
+                        }}
+                        contentTransition
+                    >
+                        {faq.answer}
+                    </AccordionItem>
+                ))}
+            </Accordion>
+
+            <style jsx>{`
         .szh-accordion__item--expanded .accordion-chevron {
           transform: rotate(180deg);
          
         }
       `}</style>
-    </section>
-           
+        </section>
+
     );
 }
 

@@ -9,12 +9,12 @@ const TopBrands = () => {
             <h3 className="text-2xl text-center text-gray-700 font-semibold mb-4">
                 Top Brands
             </h3>
-            <Marquee pauseOnHover gradient={false} speed={50}>
+            <Marquee className='' pauseOnHover gradient={false} speed={50}>
                 {data?.map((brand) => (
                     <Link
                         to={`/brand/details/${brand._id}`}
                         key={brand._id}
-                        className="flex flex-col items-center justify-center mx-6"
+                        className="flex  flex-col items-center justify-center mx-6"
                     >
                         <img
                             src={brand.brand_logo}
