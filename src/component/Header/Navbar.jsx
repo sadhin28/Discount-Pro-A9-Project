@@ -5,9 +5,9 @@ import { SiBrandfolder } from 'react-icons/si';
 import { CgProfile } from 'react-icons/cg';
 import { MdDeveloperMode } from 'react-icons/md';
 import { Link, NavLink } from 'react-router-dom';
-
+import { motion } from "framer-motion";
 const Navbar = () => {
-    const {user}=useContext(AuthContext)
+    const { user } = useContext(AuthContext)
     const links = <>
         <li>
             <NavLink to={'/'} className='lg:text-white'><IoMdHome /> Home</NavLink>
@@ -25,9 +25,9 @@ const Navbar = () => {
         </li>
     </>
     return (
-       <div className="bg-[#312c4e]  sticky top-0 z-20">
+        <div className="bg-[#312c4e]  sticky top-0 z-20">
             <div className="navbar container mx-auto">
-                <div className="navbar-start space-x-2">
+                <div className="navbar-start space-x-1">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost bg-[#312c4e] lg:hidden">
                             <svg
@@ -36,7 +36,7 @@ const Navbar = () => {
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor">
-                                
+
                                 <path
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
@@ -52,7 +52,25 @@ const Navbar = () => {
                             }
                         </ul>
                     </div>
-                    <Link to='/' className="md:text-2xl text-xl font-bold text-white">DISCOUNT <span className='text-[#19BC9B]'>PRO</span></Link>
+                    <Link to='/' className="md:text-2xl  font-bold text-white"><h3 className='flex items-center gap-2'>
+                        DISCOUNT  <motion.div
+                            animate={{
+                                y: [0, 5, 0],
+                            }}
+                            transition={{
+                                duration: 0.5,
+                                repeat: Infinity,
+                                repeatType: "loop",
+                            }}
+                            style={{ color: "#19BC9B", fontWeight: "bold" }}
+                        >
+
+                            PRO 🔥
+
+                        </motion.div>
+
+
+                    </h3></Link>
                 </div>
                 <div className="navbar-center  hidden lg:flex">
                     <ul className="menu  menu-horizontal px-2">

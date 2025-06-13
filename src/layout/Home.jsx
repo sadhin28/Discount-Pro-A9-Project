@@ -16,8 +16,9 @@ const Home = () => {
         <div className='w-11/12 mx-auto'>
            <SimpleSlider></SimpleSlider>
            <TopBrands></TopBrands>
-           <TopCategories></TopCategories>
            <BrandOnSale></BrandOnSale>
+           <TopCategories></TopCategories>
+           
            <FAQSection></FAQSection>
            <FeaturedCupons></FeaturedCupons>
           
