@@ -3,7 +3,7 @@ import React from 'react';
 const SimpleSlider = () => {
     return (
         <div>
-            <h1>SimpleSlider</h1>
+           <h1>Simple Slider</h1>
         </div>
     );
 };

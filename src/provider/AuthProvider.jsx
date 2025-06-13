@@ -1,7 +1,9 @@
 
+
+
+
 import AuthContext from "../Context/AuthContext";
 
-import PropTypes from "prop-types";
 
 
 export default function AuthProvider({ children }) {
@@ -11,12 +13,13 @@ export default function AuthProvider({ children }) {
     };
 
     return (
-        <AuthContext.Provider value={authInfo}>
+       <AuthContext.Provider value={authInfo}>
             {children}
-        </AuthContext.Provider>
+       </AuthContext.Provider>
     );
 }
 
 AuthProvider.propTypes = {
+    // eslint-disable-next-line no-undef
     children: PropTypes.node.isRequired,
 };

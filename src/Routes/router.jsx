@@ -1,7 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 import Root from "../component/Root/Root";
-import ErrorPages from "../component/ErrorPage/ErrorPages";
+import ErrorPages from "../component/Pages/ErrorPages";
 import HomeLayout from "../layout/HomeLayout";
+import BrandPage from "../component/Pages/BrandPage";
+import CouponPage from "../component/Pages/CouponPage";
+import Profile from "../component/Pages/Profile";
+import Login from "../component/Pages/Login";
+
 
 const router = createBrowserRouter([
     {
@@ -11,11 +16,25 @@ const router = createBrowserRouter([
         children:[
             {
                 path:'/',
-                element:<HomeLayout></HomeLayout>
+                element:<HomeLayout></HomeLayout>,
+                loader:() => fetch('/data.json'),
             },
             {
-              path:'brands',
-              
+              path:'/brands',
+              element:<BrandPage></BrandPage>  
+            },
+            {
+                path:'/brand/:id',
+                element:<CouponPage/>,
+
+            },
+            {
+                path:'/profile',
+                element:<Profile></Profile>
+            },
+            {
+                path:"/login",
+                element:<Login></Login>
             }
         ]
     }
