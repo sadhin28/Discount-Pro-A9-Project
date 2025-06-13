@@ -33,21 +33,21 @@ function FAQSection() {
                         
                         key={idx}
                         header={
-                            <div className="flex  justify-between items-center w-full text-left font-medium text-lg text-gray-800">
+                            <div className="flex rounded-lg justify-between items-center w-full text-left font-medium text-lg text-gray-800">
                                 {faq.question}
                                 <ChevronDown className="ml-2 shrink-0 transition-transform duration-200 accordion-chevron text-[#19BC9B]" />
                             </div>
                         }
-                        className="  rounded-lg overflow-hidden"
+                        className=" rounded-t-lg overflow-hidden"
                         contentProps={{
                             className: "p-4 text-gray-600 bg-gray-50",
                         }}
                         buttonProps={{
                             className:
-                                "w-full px-4 py-3 text-left border-t-1 bg-[#E7F8F7] focus:outline-none focus:ring-2 focus:ring-[#19BC9B] rounded-t-lg",
+                                "w-full  px-4 py-3 text-left border-t-2 border-l-2 border-r-2 focus:outline-none focus:ring-2 focus:ring-[#19BC9B] rounded-t-lg",
                         }}
-                        contentTransition
-                    >
+                        contentTransition>
+                        
                         {faq.answer}
                     </AccordionItem>
                 ))}
