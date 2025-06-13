@@ -18,9 +18,9 @@ const Home = () => {
            <TopBrands></TopBrands>
            <BrandOnSale></BrandOnSale>
            <TopCategories></TopCategories>
-           
-           <FAQSection></FAQSection>
            <FeaturedCupons></FeaturedCupons>
+           <FAQSection></FAQSection>
+           
           
            <SubscriptionCard></SubscriptionCard>
            
