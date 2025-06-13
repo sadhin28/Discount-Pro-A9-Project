@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 const TopCategories = () => {
      const categories = [
-        { id: 1, name: "Electronics", image: "https://i.ibb.co.com/MCV8kz2/elec.jpg" },
-        { id: 2, name: "Fashion", image: "https://i.ibb.co.com/tsZd1h5/fashsion.jpg" },
-        { id: 3, name: "Travel", image: "https://i.ibb.co.com/8MDyVSG/travel.jpg" },
-        { id: 4, name: "Home & Kitchen", image: "https://i.ibb.co.com/ggvbXZN/kitchen.jpg" },
+        { id: 1, name: "Electronics", image: "https://ecelectronics.com/wp-content/uploads/2020/04/Modern-Electronics-EC-.jpg.webp" },
+        { id: 2, name: "Fashion", image: "https://theplanetapp.com/wp-content/uploads/2022/08/fast-fashion-1-scaled-1-1536x1025.webp" },
+        { id: 3, name: "Travel", image: "https://img.freepik.com/free-vector/vacation-holidays-background-with-realistic-globe-suitcase-photo-camera_1284-10476.jpg?ga=GA1.1.764605549.1740402475&semt=ais_hybrid&w=740" },
+        { id: 4, name: "Home & Kitchen", image: "https://www.pickaboo.com/blog/wp-content/uploads/2025/02/1690969614632-1024x576.png" },
     ];
     return (
         <Link to={'/brands'} className="my-12  container mx-auto">
@@ -18,7 +18,7 @@ const TopCategories = () => {
                 {categories?.map((category) => (
                     <div
                         key={category.id} data-aos="zoom-in-right"
-                        className="border rounded-2xl shadow-sm flex flex-col items-center bg-white hover:shadow-md transition-shadow"
+                        className="rounded-2xl shadow-sm flex flex-col items-center bg-white hover:shadow-md transition-shadow"
                     >
                         {/* Category Image */}
                         <img
