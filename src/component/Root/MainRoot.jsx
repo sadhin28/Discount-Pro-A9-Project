@@ -6,7 +6,7 @@ import Footer from '../Footer/Footer';
 
 const MainRoot = () => {
     return (
-        <div>
+        <div className='bg-[#E6F0F4] min-h-screen'>
             <Navbar></Navbar>
             <Outlet></Outlet>
             <Footer></Footer>

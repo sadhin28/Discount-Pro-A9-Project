@@ -13,13 +13,15 @@ const Home = () => {
     const {user}=useContext(AuthContext)
     console.log(user)
     return (
-        <div>
+        <div className='w-11/12 mx-auto'>
+           <SimpleSlider></SimpleSlider>
+           <TopBrands></TopBrands>
            <BrandOnSale></BrandOnSale>
            <FAQSection></FAQSection>
            <FeaturedCupons></FeaturedCupons>
-           <SimpleSlider></SimpleSlider>
+          
            <SubscriptionCard></SubscriptionCard>
-           <TopBrands></TopBrands>
+           
            <TopCategories></TopCategories>
         </div>
     );

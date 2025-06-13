@@ -27,15 +27,16 @@ const Navbar = () => {
     return (
        <div className="bg-[#312c4e]  sticky top-0 z-20">
             <div className="navbar container mx-auto">
-                <div className="navbar-start">
+                <div className="navbar-start space-x-2">
                     <div className="dropdown">
-                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                        <div tabIndex={0} role="button" className="btn btn-ghost bg-[#312c4e] lg:hidden">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="h-5 w-5"
+                                className="h-5 w-5 text-[#19BC9B] "
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor">
+                                
                                 <path
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
@@ -51,10 +52,10 @@ const Navbar = () => {
                             }
                         </ul>
                     </div>
-                    <Link to='/' className="text-2xl font-bold text-white">Discount Pro</Link>
+                    <Link to='/' className="text-2xl font-bold text-white">DISCOUNT <span className='text-[#19BC9B]'>PRO</span></Link>
                 </div>
-                <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-2">
+                <div className="navbar-center  hidden lg:flex">
+                    <ul className="menu  menu-horizontal px-2">
                         {
                             links
                         }
