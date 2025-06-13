@@ -30,12 +30,12 @@ function FAQSection() {
             <Accordion data-aos="zoom-in" className="space-y-4 ">
                 {faqs.map((faq, idx) => (
                     <AccordionItem
-
+                        
                         key={idx}
                         header={
                             <div className="flex  justify-between items-center w-full text-left font-medium text-lg text-gray-800">
                                 {faq.question}
-                                <ChevronDown className="ml-2 shrink-0 transition-transform duration-200 accordion-chevron" />
+                                <ChevronDown className="ml-2 shrink-0 transition-transform duration-200 accordion-chevron text-[#19BC9B]" />
                             </div>
                         }
                         className="  rounded-lg overflow-hidden"
@@ -44,7 +44,7 @@ function FAQSection() {
                         }}
                         buttonProps={{
                             className:
-                                "w-full px-4 py-3 text-left bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary rounded-t-lg",
+                                "w-full px-4 py-3 text-left border-t-1 bg-[#E7F8F7] focus:outline-none focus:ring-2 focus:ring-[#19BC9B] rounded-t-lg",
                         }}
                         contentTransition
                     >

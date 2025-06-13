@@ -1,7 +1,7 @@
 import cuponImg from '../../assets/smiling-female-receptionist-hand-presenting-something-side-view-isolate-on-transparency-background-png.webp'
 const SubscriptionCard = () => {
     return (
-        <div className="bg-[#E7F8F7] rounded-lg p-4 md:p-8 flex items-center justify-between my-12 container mx-auto max-w-9xl ">
+        <div className="bg-[#E7F8F7] rounded-lg p-4 md:p-8 flex items-center justify-between my-12 container ">
             {/* Left Section */}
             <div className='md:w-3/5'>
                 <h3 className="text-2xl font-bold text-gray-800 mb-2">
@@ -28,6 +28,7 @@ const SubscriptionCard = () => {
             {/* Right Section */}
             <div className="hidden sm:block">
                 <img
+                    data-aos="zoom-in"
                     src={cuponImg}
                     alt="Best Coupons Illustration"
                 />
