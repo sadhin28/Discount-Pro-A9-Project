@@ -41,20 +41,26 @@ const SimpleSlider = () => {
         {data.map((brand) => (
           <div
             key={brand._id}
-            className="p-6 items-center   justify-center bg-white shadow-md my-6 border border-gray-200"
+            className="p-6 items-center h-80 md:h-70 justify-center bg-white shadow-md my-6 border border-gray-200"
           >
-            <img
+            <div className="">
+                      <img
               src={brand.brand_logo}
               alt={brand.brand_name}
-              className="w-32  h-32 object-contain"
+              className="h-32 w-32 object-contain"
             />
+            </div>
+          
             <h3 className="text-xl font-bold text-gray-500">{brand.brand_name}</h3>
             <p className="text-gray-600 font-semibold">{brand.coupons[0].description}</p>
+            
             <Link to={`/brand/${brand._id}`}
-              className="mt-4  btn px-5  rounded-sm py-2 text-white font-medium bg-[#19BC9B] hover:bg-[#17A68A] transition-all"
+              className="mt-4   btn px-5  rounded-sm py-2 text-white font-medium bg-[#19BC9B] hover:bg-[#17A68A] transition-all"
             >
               View Coupons
             </Link>
+            
+            
           </div>
 
         ))}
