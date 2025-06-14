@@ -3,7 +3,7 @@ export const AuthContext=createContext();
 
 
 import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
-import auth from "../Firebase/firebase.init";
+import auth from "../component/firebase/firebase.config";
 
 
 const AuthProvider = ({children}) => {

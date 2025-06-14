@@ -11,6 +11,7 @@ import BrandDetails from '../component/page/BrandDetails';
 import AboutDev from '../component/page/AboutDev';
 import Register from '../component/page/Register';
 import ForgetPassword from '../component/page/ForgetPassword';
+import PrivateRoute from './PrivateRoute';
 
 const router = createBrowserRouter([
   {
@@ -28,17 +29,17 @@ const router = createBrowserRouter([
       },
       {
         path:'/brand/:id',
-        element:<CouponPage/>,
+        element:<PrivateRoute><CouponPage/></PrivateRoute>,
         loader: ({ params }) => fetch(`/data.json`).then(res => res.json()).then(data => data.find(brand => brand._id === params.id)),
 
       },
       {
         path:'/profile',
-        element:<Profile/>
+        element:<PrivateRoute><Profile/></PrivateRoute>
       },
       {
         path:'/update-profile',
-        element:<UpdateProfile></UpdateProfile>
+        element:<PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
       },
      {
        path:'/auth/login',
