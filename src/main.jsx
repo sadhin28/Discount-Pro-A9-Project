@@ -20,6 +20,6 @@ createRoot(document.getElementById('root')).render(
       <RouterProvider router={router} />
     </AuthProvider>
 
-    <ToastContainer theme='dark' position='top-center'/>
+    <ToastContainer  theme='colored' position='top-center'/>
   </StrictMode>
 )
