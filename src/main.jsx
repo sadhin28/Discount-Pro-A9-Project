@@ -7,6 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import AuthProvider from './provider/AuthProvider';
+import { ToastContainer } from 'react-toastify';
 
 
 
@@ -19,6 +20,6 @@ createRoot(document.getElementById('root')).render(
       <RouterProvider router={router} />
     </AuthProvider>
 
-
+    <ToastContainer theme='dark' position='top-center'/>
   </StrictMode>
 )

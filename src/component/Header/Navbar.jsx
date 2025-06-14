@@ -7,8 +7,17 @@ import { MdDeveloperMode } from 'react-icons/md';
 import { Link, NavLink } from 'react-router-dom';
 import { motion } from "framer-motion";
 const Navbar = () => {
-    const { user } = useContext(AuthContext)
-    const links = <>
+    const { user, logOut } = useContext(AuthContext)
+    const handleLogOut = () => {
+        logOut()
+            .then((result) => {
+                console.log(result)
+            }).catch((error) => {
+                console.error(error)
+            });
+
+    }
+   const links = <>
         <li>
             <NavLink to={'/'} className='lg:text-white'><IoMdHome /> Home</NavLink>
         </li>
