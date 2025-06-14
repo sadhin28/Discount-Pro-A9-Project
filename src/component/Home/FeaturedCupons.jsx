@@ -33,7 +33,7 @@ const FeaturedCupons = () => {
             data-aos-easing="ease-out-cubic"
             data-aos-duration="2000"
             key={coupon.id}
-            className="p-4 border rounded-md shadow-md bg-white flex flex-col"
+            className="p-4  rounded-md shadow-md bg-white flex flex-col"
           >
             {/* Coupon Image */}
             <img

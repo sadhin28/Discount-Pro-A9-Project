@@ -30,7 +30,7 @@ function FAQSection() {
             <Accordion data-aos="zoom-in" className="space-y-4 ">
                 {faqs.map((faq, idx) => (
                     <AccordionItem
-                        
+
                         key={idx}
                         header={
                             <div className="flex rounded-lg justify-between items-center w-full text-left font-medium text-lg text-gray-800">
@@ -47,7 +47,7 @@ function FAQSection() {
                                 "w-full  px-4 py-3 text-left border-t-2 border-l-2 border-r-2 focus:outline-none focus:ring-2 focus:ring-[#19BC9B] rounded-t-lg",
                         }}
                         contentTransition>
-                        
+
                         {faq.answer}
                     </AccordionItem>
                 ))}
