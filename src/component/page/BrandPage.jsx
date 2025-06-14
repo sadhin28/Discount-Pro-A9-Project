@@ -10,7 +10,9 @@ const BrandPage = () => {
         fetch('/data.json')
             .then((res) => res.json())
             .then((data) => setBrands(data))
-            .catch((error) => console.log("Error fetching data:", error));
+            .catch((error) => {
+                
+            });
     }, []);
     // Handle search input
     const handleSearch = (e) => {

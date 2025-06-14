@@ -12,7 +12,7 @@ const UpdateProfile = () => {
         const photo = event.target.photo.value;
         updateUserProfile(name, photo)
             .then(() => {
-                console.log("Profile updated successfully");
+               
                 navigate("/profile");
                 toast.success("Profile updated successfully")
             })

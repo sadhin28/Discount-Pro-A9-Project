@@ -11,7 +11,7 @@ import TopCategories from '../component/Home/TopCategories';
 
 const Home = () => {
     const {user}=useContext(AuthContext)
-    console.log(user)
+    
     return (
         <div className='w-11/12 mx-auto'>
            <SimpleSlider></SimpleSlider>
