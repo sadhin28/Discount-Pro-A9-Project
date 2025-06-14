@@ -1,5 +1,4 @@
 import ReactStars from "react-rating-stars-component";
-import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 const BrandCard = ({brand}) => {
