@@ -25,7 +25,7 @@ function FAQSection() {
     ]
 
     return (
-        <section className="max-w-9xl  mx-auto px-4 py-10">
+        <section id="faq" className=" max-w-9xl  mx-auto px-4 py-10">
             <h2 className="text-3xl font-bold mb-6 text-center">Frequently Asked Questions</h2>
             <Accordion data-aos="zoom-in" className="space-y-4 ">
                 {faqs.map((faq, idx) => (
