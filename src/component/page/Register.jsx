@@ -184,12 +184,12 @@ const Register = () => {
                     <button className="btn w-full bg-[#19BC9B] text-white">Register</button>
                 </div>
                 <div className='divider'>Or</div>
-                <div className="px-20 cursor-pointer mb-2">
+                <div className=" cursor-pointer mb-2">
                     <span
-                        className="flex items-center gap-1 border rounded-md p-2 justify-center text-sm hover:bg-base-200"
+                        className="flex  items-center gap-1 border rounded-md p-2 justify-center text-sm hover:bg-base-200"
                         onClick={handleGoogleLogin}
                     >
-                        <FcGoogle className="text-2xl" /> Sign in with Google
+                        <FcGoogle className="text-2xl " /> Sign in with Google
                     </span>
                 </div>
                 <div className="flex justify-center">
