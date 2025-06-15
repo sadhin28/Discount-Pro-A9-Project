@@ -61,7 +61,7 @@ const Navbar = () => {
                             }
                         </ul>
                     </div>
-                    <Link to='/' className="md:text-2xl  font-bold text-white"><h3 className='flex items-center gap-2'>
+                    <Link to='/' className="md:text-2xl text-xs font-bold text-white"><h3 className='flex items-center gap-2'>
                         DISCOUNT  <motion.div
                             animate={{
                                 y: [0, 5, 0],
@@ -71,10 +71,10 @@ const Navbar = () => {
                                 repeat: Infinity,
                                 repeatType: "loop",
                             }}
-                            style={{ color: "#19BC9B", fontWeight: "bold" }}
+                            style={{ color: "#19BC9B", fontWeight: "bold",  }}
                         >
 
-                            PRO 🔥
+                            PRO
 
                         </motion.div>
 

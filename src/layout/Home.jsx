@@ -22,7 +22,9 @@ const Home = () => {
            <FAQSection></FAQSection>
            
           
-           <SubscriptionCard></SubscriptionCard>
+          
+              <SubscriptionCard></SubscriptionCard>
+         
            
            
         </div>

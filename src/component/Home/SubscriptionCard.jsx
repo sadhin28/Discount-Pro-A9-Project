@@ -16,7 +16,7 @@ const SubscriptionCard = () => {
                     <input
                         type="email"
                         placeholder="Enter Email Address"
-                        className="p-3 border border-gray-300 bg-white rounded-l-md flex-1"
+                        className="p-3 w-full border border-gray-300 bg-white rounded-l-md flex-1"
                     />
                     <button
                         className="bg-[#19BC9B] text-white font-semibold px-6 rounded-r-md hover:bg-[#17A889] transition"
