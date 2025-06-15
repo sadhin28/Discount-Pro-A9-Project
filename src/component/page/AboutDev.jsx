@@ -33,7 +33,7 @@ const AboutDev = () => {
                             href="#"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-[#19BC9B] hover:underline ml-1"
+                            className="text-[#0A66C2] hover:underline ml-1"
                         >
                             Portfolio Website
                         </a>
