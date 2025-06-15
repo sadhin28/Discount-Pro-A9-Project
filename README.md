@@ -3,7 +3,7 @@
 _Discount PRO_ is a sleek and user-friendly single-page web application built to help users in **Bangladesh** find and use discount coupons from popular e-commerce brands. With features like Google authentication, brand-wise coupon listings, and easy code copying, users can save money effortlessly.
 
 ## 🔗 Live Website
-[🔗 View Live]("https://your-deployment-url.com")
+[🔗 View Live](https://discount-pro-95f08.web.app/)
 
 ---
 
