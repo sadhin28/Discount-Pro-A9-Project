@@ -8,7 +8,8 @@ import auth from "../component/firebase/firebase.config";
 
 const AuthProvider = ({children}) => {
      const [user, setUser] = useState(null);
-    const [loading, setLoading] = useState(true);
+    
+     const [loading, setLoading] = useState(true);
 
     // Create a new user
     const createUser = (email, password) => {
